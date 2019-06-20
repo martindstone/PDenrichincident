@@ -1,0 +1,6 @@
+{
+  "name": "PDenrichincident",
+  "description": "Enrich the output of the PagerDuty /incidents endpoint",
+  "repository": "https://github.com/martindstone/PDenrichincident",
+  "keywords": ["PDenrichincident"]
+}
