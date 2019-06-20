@@ -22,22 +22,7 @@ def incidents():
 		else:
 			params[k] = v
 
-	# req = requests.Request(
-	# 	method='GET',
-	# 	url='https://api.pagerduty.com/incidents',
-	# 	headers=headers,
-	# 	params=params
-	# )
-
-	# prepped = req.prepare()
-	# response = requests.Session().send(prepped)
-
-	response = requests.get(
-		url='https://api.pagerduty.com/incidents',
-		headers=headers,
-		params=params
-	)
-
+	response = requests.get(url='https://api.pagerduty.com/incidents', headers=headers, params=params)
 	incidents = response.json()
 
 	incidents_index = {}
